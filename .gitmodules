@@ -1,0 +1,3 @@
+[submodule "s3fs-nio"]
+	path = s3fs-nio
+	url = https://github.com/Aiven-Labs/s3fs-nio.git
