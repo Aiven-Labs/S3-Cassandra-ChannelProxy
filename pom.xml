@@ -15,11 +15,25 @@
     <artifactId>s3fs-nio</artifactId>
     <version>1.0.3-SNAPSHOT</version>
 </dependency>
+  	<dependency>
+  		<groupId>org.apache</groupId>
+  		<artifactId>apache-cassandra</artifactId>
+  		<version>5.0-alpha1-SNAPSHOT</version>
+  		<scope>provided</scope>
+  	</dependency>
   </dependencies>
   <properties>
   	<slf4j-version>1.7.25</slf4j-version>
   	        <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.source>17</maven.compiler.source>
-        <encoding>UTF-8</encoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
+  <repositories>
+  <repository>
+    <id>in-project</id>
+    <name>In Project Repo</name>
+    <url>file://${project.basedir}/libs</url>
+</repository>
+</repositories>
 </project>
